@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/layout_item_user"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="12"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Bret"
+        app:layout_constraintLeft_toRightOf="@id/text_id"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dp_10"/>
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text_id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="dasdas asda das dad as" />
+
+</android.support.constraint.ConstraintLayout>
